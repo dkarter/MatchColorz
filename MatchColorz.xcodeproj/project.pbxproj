@@ -3,10 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9822640623503D2500CB4CB7 /* Controls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9822640523503D2500CB4CB7 /* Controls.swift */; };
+		9822640823503D8600CB4CB7 /* ColorSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9822640723503D8600CB4CB7 /* ColorSlider.swift */; };
+		9822640A23503DA500CB4CB7 /* TargetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9822640923503DA500CB4CB7 /* TargetView.swift */; };
+		9822640C235047F300CB4CB7 /* RGBValueLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9822640B235047F300CB4CB7 /* RGBValueLabel.swift */; };
 		98FF1DE522BACEBD006A4023 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FF1DE422BACEBD006A4023 /* AppDelegate.swift */; };
 		98FF1DE722BACEBD006A4023 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FF1DE622BACEBD006A4023 /* ContentView.swift */; };
 		98FF1DE922BACEBE006A4023 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98FF1DE822BACEBE006A4023 /* Assets.xcassets */; };
@@ -34,7 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		98FF1DE122BACEBD006A4023 /* TestSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9822640523503D2500CB4CB7 /* Controls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controls.swift; sourceTree = "<group>"; };
+		9822640723503D8600CB4CB7 /* ColorSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSlider.swift; sourceTree = "<group>"; };
+		9822640923503DA500CB4CB7 /* TargetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetView.swift; sourceTree = "<group>"; };
+		9822640B235047F300CB4CB7 /* RGBValueLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGBValueLabel.swift; sourceTree = "<group>"; };
+		98FF1DE122BACEBD006A4023 /* MatchColorz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MatchColorz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98FF1DE422BACEBD006A4023 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		98FF1DE622BACEBD006A4023 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		98FF1DE822BACEBE006A4023 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -42,10 +50,10 @@
 		98FF1DEE22BACEBE006A4023 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		98FF1DF022BACEBE006A4023 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		98FF1DF122BACEBE006A4023 /* TestSwiftUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TestSwiftUI.entitlements; sourceTree = "<group>"; };
-		98FF1DF622BACEBE006A4023 /* TestSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		98FF1DF622BACEBE006A4023 /* MatchColorzTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MatchColorzTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		98FF1DFA22BACEBE006A4023 /* TestSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSwiftUITests.swift; sourceTree = "<group>"; };
 		98FF1DFC22BACEBE006A4023 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		98FF1E0122BACEBE006A4023 /* TestSwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestSwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		98FF1E0122BACEBE006A4023 /* MatchColorzUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MatchColorzUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		98FF1E0522BACEBE006A4023 /* TestSwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSwiftUIUITests.swift; sourceTree = "<group>"; };
 		98FF1E0722BACEBE006A4023 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -78,9 +86,9 @@
 		98FF1DD822BACEBD006A4023 = {
 			isa = PBXGroup;
 			children = (
-				98FF1DE322BACEBD006A4023 /* TestSwiftUI */,
-				98FF1DF922BACEBE006A4023 /* TestSwiftUITests */,
-				98FF1E0422BACEBE006A4023 /* TestSwiftUIUITests */,
+				98FF1DE322BACEBD006A4023 /* MatchColorz */,
+				98FF1DF922BACEBE006A4023 /* MatchColorzTests */,
+				98FF1E0422BACEBE006A4023 /* MatchColorzUITests */,
 				98FF1DE222BACEBD006A4023 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,25 +96,29 @@
 		98FF1DE222BACEBD006A4023 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				98FF1DE122BACEBD006A4023 /* TestSwiftUI.app */,
-				98FF1DF622BACEBE006A4023 /* TestSwiftUITests.xctest */,
-				98FF1E0122BACEBE006A4023 /* TestSwiftUIUITests.xctest */,
+				98FF1DE122BACEBD006A4023 /* MatchColorz.app */,
+				98FF1DF622BACEBE006A4023 /* MatchColorzTests.xctest */,
+				98FF1E0122BACEBE006A4023 /* MatchColorzUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		98FF1DE322BACEBD006A4023 /* TestSwiftUI */ = {
+		98FF1DE322BACEBD006A4023 /* MatchColorz */ = {
 			isa = PBXGroup;
 			children = (
 				98FF1DE422BACEBD006A4023 /* AppDelegate.swift */,
 				98FF1DE622BACEBD006A4023 /* ContentView.swift */,
+				9822640923503DA500CB4CB7 /* TargetView.swift */,
+				9822640B235047F300CB4CB7 /* RGBValueLabel.swift */,
+				9822640723503D8600CB4CB7 /* ColorSlider.swift */,
+				9822640523503D2500CB4CB7 /* Controls.swift */,
 				98FF1DE822BACEBE006A4023 /* Assets.xcassets */,
 				98FF1DED22BACEBE006A4023 /* Main.storyboard */,
 				98FF1DF022BACEBE006A4023 /* Info.plist */,
 				98FF1DF122BACEBE006A4023 /* TestSwiftUI.entitlements */,
 				98FF1DEA22BACEBE006A4023 /* Preview Content */,
 			);
-			path = TestSwiftUI;
+			path = MatchColorz;
 			sourceTree = "<group>";
 		};
 		98FF1DEA22BACEBE006A4023 /* Preview Content */ = {
@@ -117,30 +129,30 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		98FF1DF922BACEBE006A4023 /* TestSwiftUITests */ = {
+		98FF1DF922BACEBE006A4023 /* MatchColorzTests */ = {
 			isa = PBXGroup;
 			children = (
 				98FF1DFA22BACEBE006A4023 /* TestSwiftUITests.swift */,
 				98FF1DFC22BACEBE006A4023 /* Info.plist */,
 			);
-			path = TestSwiftUITests;
+			path = MatchColorzTests;
 			sourceTree = "<group>";
 		};
-		98FF1E0422BACEBE006A4023 /* TestSwiftUIUITests */ = {
+		98FF1E0422BACEBE006A4023 /* MatchColorzUITests */ = {
 			isa = PBXGroup;
 			children = (
 				98FF1E0522BACEBE006A4023 /* TestSwiftUIUITests.swift */,
 				98FF1E0722BACEBE006A4023 /* Info.plist */,
 			);
-			path = TestSwiftUIUITests;
+			path = MatchColorzUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		98FF1DE022BACEBD006A4023 /* TestSwiftUI */ = {
+		98FF1DE022BACEBD006A4023 /* MatchColorz */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 98FF1E0A22BACEBE006A4023 /* Build configuration list for PBXNativeTarget "TestSwiftUI" */;
+			buildConfigurationList = 98FF1E0A22BACEBE006A4023 /* Build configuration list for PBXNativeTarget "MatchColorz" */;
 			buildPhases = (
 				98FF1DDD22BACEBD006A4023 /* Sources */,
 				98FF1DDE22BACEBD006A4023 /* Frameworks */,
@@ -150,14 +162,14 @@
 			);
 			dependencies = (
 			);
-			name = TestSwiftUI;
+			name = MatchColorz;
 			productName = TestSwiftUI;
-			productReference = 98FF1DE122BACEBD006A4023 /* TestSwiftUI.app */;
+			productReference = 98FF1DE122BACEBD006A4023 /* MatchColorz.app */;
 			productType = "com.apple.product-type.application";
 		};
-		98FF1DF522BACEBE006A4023 /* TestSwiftUITests */ = {
+		98FF1DF522BACEBE006A4023 /* MatchColorzTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 98FF1E0D22BACEBE006A4023 /* Build configuration list for PBXNativeTarget "TestSwiftUITests" */;
+			buildConfigurationList = 98FF1E0D22BACEBE006A4023 /* Build configuration list for PBXNativeTarget "MatchColorzTests" */;
 			buildPhases = (
 				98FF1DF222BACEBE006A4023 /* Sources */,
 				98FF1DF322BACEBE006A4023 /* Frameworks */,
@@ -168,14 +180,14 @@
 			dependencies = (
 				98FF1DF822BACEBE006A4023 /* PBXTargetDependency */,
 			);
-			name = TestSwiftUITests;
+			name = MatchColorzTests;
 			productName = TestSwiftUITests;
-			productReference = 98FF1DF622BACEBE006A4023 /* TestSwiftUITests.xctest */;
+			productReference = 98FF1DF622BACEBE006A4023 /* MatchColorzTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		98FF1E0022BACEBE006A4023 /* TestSwiftUIUITests */ = {
+		98FF1E0022BACEBE006A4023 /* MatchColorzUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 98FF1E1022BACEBE006A4023 /* Build configuration list for PBXNativeTarget "TestSwiftUIUITests" */;
+			buildConfigurationList = 98FF1E1022BACEBE006A4023 /* Build configuration list for PBXNativeTarget "MatchColorzUITests" */;
 			buildPhases = (
 				98FF1DFD22BACEBE006A4023 /* Sources */,
 				98FF1DFE22BACEBE006A4023 /* Frameworks */,
@@ -186,9 +198,9 @@
 			dependencies = (
 				98FF1E0322BACEBE006A4023 /* PBXTargetDependency */,
 			);
-			name = TestSwiftUIUITests;
+			name = MatchColorzUITests;
 			productName = TestSwiftUIUITests;
-			productReference = 98FF1E0122BACEBE006A4023 /* TestSwiftUIUITests.xctest */;
+			productReference = 98FF1E0122BACEBE006A4023 /* MatchColorzUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -198,7 +210,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1100;
+				LastUpgradeCheck = 1110;
 				ORGANIZATIONNAME = "Dorian Karter";
 				TargetAttributes = {
 					98FF1DE022BACEBD006A4023 = {
@@ -214,8 +226,8 @@
 					};
 				};
 			};
-			buildConfigurationList = 98FF1DDC22BACEBD006A4023 /* Build configuration list for PBXProject "TestSwiftUI" */;
-			compatibilityVersion = "Xcode 9.3";
+			buildConfigurationList = 98FF1DDC22BACEBD006A4023 /* Build configuration list for PBXProject "MatchColorz" */;
+			compatibilityVersion = "Xcode 11.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -227,9 +239,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				98FF1DE022BACEBD006A4023 /* TestSwiftUI */,
-				98FF1DF522BACEBE006A4023 /* TestSwiftUITests */,
-				98FF1E0022BACEBE006A4023 /* TestSwiftUIUITests */,
+				98FF1DE022BACEBD006A4023 /* MatchColorz */,
+				98FF1DF522BACEBE006A4023 /* MatchColorzTests */,
+				98FF1E0022BACEBE006A4023 /* MatchColorzUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -267,6 +279,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				98FF1DE722BACEBD006A4023 /* ContentView.swift in Sources */,
+				9822640623503D2500CB4CB7 /* Controls.swift in Sources */,
+				9822640C235047F300CB4CB7 /* RGBValueLabel.swift in Sources */,
+				9822640823503D8600CB4CB7 /* ColorSlider.swift in Sources */,
+				9822640A23503DA500CB4CB7 /* TargetView.swift in Sources */,
 				98FF1DE522BACEBD006A4023 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,12 +308,12 @@
 /* Begin PBXTargetDependency section */
 		98FF1DF822BACEBE006A4023 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 98FF1DE022BACEBD006A4023 /* TestSwiftUI */;
+			target = 98FF1DE022BACEBD006A4023 /* MatchColorz */;
 			targetProxy = 98FF1DF722BACEBE006A4023 /* PBXContainerItemProxy */;
 		};
 		98FF1E0322BACEBE006A4023 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 98FF1DE022BACEBD006A4023 /* TestSwiftUI */;
+			target = 98FF1DE022BACEBD006A4023 /* MatchColorz */;
 			targetProxy = 98FF1E0222BACEBE006A4023 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -431,17 +447,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = TestSwiftUI/TestSwiftUI.entitlements;
+				CODE_SIGN_ENTITLEMENTS = MatchColorz/TestMatchColorz.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_ASSET_PATHS = "TestSwiftUI/Preview\\ Content";
+				DEVELOPMENT_ASSET_PATHS = "MatchColorz/Preview\\ Content";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = TestSwiftUI/Info.plist;
+				INFOPLIST_FILE = MatchColorz/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.PrimateMind.TestSwiftUI;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.PrimateMind.MatchColorz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -451,17 +469,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = TestSwiftUI/TestSwiftUI.entitlements;
+				CODE_SIGN_ENTITLEMENTS = MatchColorz/TestMatchColorz.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_ASSET_PATHS = "TestSwiftUI/Preview\\ Content";
+				DEVELOPMENT_ASSET_PATHS = "MatchColorz/Preview\\ Content";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = TestSwiftUI/Info.plist;
+				INFOPLIST_FILE = MatchColorz/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.PrimateMind.TestSwiftUI;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.PrimateMind.MatchColorz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -483,7 +503,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.PrimateMind.TestSwiftUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestSwiftUI.app/Contents/MacOS/TestSwiftUI";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MatchColorz.app/Contents/MacOS/MatchColorz";
 			};
 			name = Debug;
 		};
@@ -503,7 +523,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.PrimateMind.TestSwiftUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestSwiftUI.app/Contents/MacOS/TestSwiftUI";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MatchColorz.app/Contents/MacOS/MatchColorz";
 			};
 			name = Release;
 		};
@@ -548,7 +568,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		98FF1DDC22BACEBD006A4023 /* Build configuration list for PBXProject "TestSwiftUI" */ = {
+		98FF1DDC22BACEBD006A4023 /* Build configuration list for PBXProject "MatchColorz" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				98FF1E0822BACEBE006A4023 /* Debug */,
@@ -557,7 +577,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		98FF1E0A22BACEBE006A4023 /* Build configuration list for PBXNativeTarget "TestSwiftUI" */ = {
+		98FF1E0A22BACEBE006A4023 /* Build configuration list for PBXNativeTarget "MatchColorz" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				98FF1E0B22BACEBE006A4023 /* Debug */,
@@ -566,7 +586,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		98FF1E0D22BACEBE006A4023 /* Build configuration list for PBXNativeTarget "TestSwiftUITests" */ = {
+		98FF1E0D22BACEBE006A4023 /* Build configuration list for PBXNativeTarget "MatchColorzTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				98FF1E0E22BACEBE006A4023 /* Debug */,
@@ -575,7 +595,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		98FF1E1022BACEBE006A4023 /* Build configuration list for PBXNativeTarget "TestSwiftUIUITests" */ = {
+		98FF1E1022BACEBE006A4023 /* Build configuration list for PBXNativeTarget "MatchColorzUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				98FF1E1122BACEBE006A4023 /* Debug */,

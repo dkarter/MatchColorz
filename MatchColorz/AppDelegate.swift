@@ -9,6 +9,7 @@
 import Cocoa
 import SwiftUI
 
+@available(OSX 10.15, *)
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
@@ -24,7 +25,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     window.center()
     window.setFrameAutosaveName("Main Window")
 
-    window.contentView = NSHostingView(rootView: ContentView())
+    window.contentView = NSHostingView(rootView: ContentView(rGuess: 0.5, gGuess: 0.5, bGuess: 0.5))
 
     window.makeKeyAndOrderFront(nil)
   }

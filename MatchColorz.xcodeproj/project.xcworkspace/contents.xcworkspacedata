@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:TestSwiftUI.xcodeproj">
+      location = "self:/Users/dorian/dev/mac_apps/TestSwiftUI/MatchColorz.xcodeproj">
    </FileRef>
 </Workspace>
